@@ -1,9 +1,12 @@
+import waterImage from "./assets/water.png";
+import glassImage from "./assets/glass.svg";
+
 function App() {
   return (
     <div className="container mx-auto w-4/5 mt-5">
       <header className="flex gap-2.5 mb-12">
         <div className="bg-[#322F40] rounded-full w-[60px] h-[60px]">
-          <img src="src/assets/water.png" alt="" />
+          <img src={waterImage} alt="" />
         </div>
         <div className="text-white text-2xl">
           <h3 className="font-light">Boa tarde,</h3>
@@ -14,7 +17,7 @@ function App() {
         <aside className="md:grid w-52 h-[350px] m-auto bg-[#7FC4ED] rounded-[20px] text-center grid content-center">
           <span className="text-xs font-bold">80%</span>
           <img
-            src="src/assets/glass.svg"
+            src={glassImage}
             alt=""
             className="mx-auto mt-8 mb-10"
           />
