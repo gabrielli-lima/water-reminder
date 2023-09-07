@@ -54,6 +54,14 @@ function App() {
               max="300"
             />
           </label>
+          <div className="my-7 flex justify-center items-center ">
+                <div className="w-16 h-16 bg-[#322F40] text-white text-[32px] text-center font-normal flex justify-center items-center rounded-lg leading-none" x-text="hours">00</div>
+                <div className="text-xs text-[#4E4964] mx-1">h</div>
+                <div className="text-[32px] mx-3 text-white">:</div>
+                <div className="w-16 h-16 bg-[#322F40] text-white text-[32px] text-center font-normal flex justify-center items-center rounded-lg leading-none" x-text="minutes">00</div>
+                <div className="text-xs text-[#4E4964] mx-1">m</div>
+          </div>
+          <button type="button" className="bg-[#7FC4ED] text-base text-black font-medium w-full p-4 rounded-md">Começar</button>
         </section>
       </div>
     </div>
