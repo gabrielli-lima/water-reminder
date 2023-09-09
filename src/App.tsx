@@ -1,7 +1,16 @@
 import waterImage from "./assets/water.png";
 import glassImage from "./assets/glass.svg";
+import { useState } from "react";
+import { Modal } from "./components/Modal";
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const handleButtonClick = () => {
+    setIsModalOpen(true)
+  }
+
+
   return (
     <div className="container mx-auto w-4/5 mt-5">
       <header className="flex gap-2.5 mb-12">
@@ -64,7 +73,8 @@ function App() {
                 <div className="w-16 h-16 bg-[#322F40] text-white text-[32px] text-center font-normal flex justify-center items-center rounded-lg leading-none" x-text="minutes">00</div>
                 <div className="text-xs text-[#4E4964] mx-1">m</div>
           </div>
-          <button type="button" className="bg-[#7FC4ED] text-base text-black font-medium w-full p-4 rounded-md">Começar</button>
+          <button type="button" className="bg-[#7FC4ED] text-base text-black font-medium w-full p-4 rounded-md" onClick={handleButtonClick}>Começar</button>
+          {isModalOpen && <Modal isOpen={true} /> }
         </section>
       </div>
     </div>
