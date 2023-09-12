@@ -35,7 +35,7 @@ function App() {
             <span className="flex justify-between items-center text-base font-medium">
               Meta diária <span className="text-xs text-[#4E4964]">300ml</span>
             </span>
-            <input className="mt-2 in-range:border-green-500" type="range" name="metaDiaria" id="metaDiaria" min="0" max="300"  />
+            <input className="mt-2 in-range:border-green-500" type="range" name="metaDiaria" id="metaDiaria" min="0" max="300" />
           </label>
           <label className="grid text-[#7FC4ED] mt-7">
             <span className="flex justify-between items-center text-base font-medium">
@@ -45,18 +45,18 @@ function App() {
             <input className="mt-2" type="range" name="qntdPorTimer" id="qntdPorTimer" min="0" max="300" />
           </label>
           <div className="my-7 flex justify-center items-center ">
-            <div className="w-16 h-16 bg-[#322F40] text-white text-[32px] text-center font-normal flex justify-center items-center rounded-lg leading-none" x-text="hours">00</div>
+            <input type="timer" value="00" className="w-16 h-16 bg-[#322F40] text-white text-[32px] text-center font-normal flex justify-center items-center rounded-lg leading-none" x-text="hours" />
             <div className="text-xs text-[#4E4964] mx-1">h</div>
             <div className="text-[32px] mx-3 text-white">:</div>
-            <div className="w-16 h-16 bg-[#322F40] text-white text-[32px] text-center font-normal flex justify-center items-center rounded-lg leading-none" x-text="minutes">00</div>
+            <input type="timer" value="00" className="w-16 h-16 bg-[#322F40] text-white text-[32px] text-center font-normal flex justify-center items-center rounded-lg leading-none" x-text="minutes" />
             <div className="text-xs text-[#4E4964] mx-1">m</div>
           </div>
           <CustomModal open={modalOpen} onClose={handleClose} />
           <button type="button" className="bg-[#7FC4ED] text-base text-black font-medium w-full p-4 rounded-md" onClick={handleModalOpen}>Começar</button>
 
         </section>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }
 
