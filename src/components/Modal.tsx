@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import glassImage from "../assets/glass.svg";
-import {useState} from 'react'
 
 type ModalProps = {
   open: boolean;
