@@ -19,7 +19,7 @@ export default function RangeInput({text}: Props) {
                     {text}
                     <span className="text-xs text-[#4E4964]">{rangeValue}ml</span>
                 </span>
-                <input className="mt-2" type="range" min="0" max="2000" value={rangeValue} onChange={handleRangeChange} />
+                <input className="mt-2" type="range" min="0" max="3000" value={rangeValue} onChange={handleRangeChange} />
 
             </label>
         </div>

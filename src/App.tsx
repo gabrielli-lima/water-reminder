@@ -3,6 +3,7 @@ import glassImage from "./assets/glass.svg";
 import { useState } from "react";
 import CustomModal from "./components/Modal";
 import RangeInput from "./components/RangeInput";
+import Timer from "./components/Timer";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -31,19 +32,14 @@ function App() {
         </aside>
 
         <section className="col-span-2 text-[#7FC4ED] mt-7 md:mt-0">
-          
+
           <RangeInput text="Meta diária" />
           <RangeInput text="Quantidade por timer" />
 
-          <div className="my-7 flex justify-center items-center ">
-            <input type="timer" value="00" className="w-16 h-16 bg-[#322F40] text-white text-[32px] text-center font-normal flex justify-center items-center rounded-lg leading-none" x-text="hours" />
-            <div className="text-xs text-[#4E4964] mx-1">h</div>
-            <div className="text-[32px] mx-3 text-white">:</div>
-            <input type="timer" value="00" className="w-16 h-16 bg-[#322F40] text-white text-[32px] text-center font-normal flex justify-center items-center rounded-lg leading-none" x-text="minutes" />
-            <div className="text-xs text-[#4E4964] mx-1">m</div>
-          </div>
+          <Timer />
 
           <CustomModal open={modalOpen} onClose={handleClose} />
+
           <button type="button" className="bg-[#7FC4ED] text-base text-black font-medium w-full p-4 rounded-md" onClick={handleModalOpen}>Começar</button>
 
         </section>
