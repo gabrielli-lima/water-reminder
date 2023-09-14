@@ -14,7 +14,7 @@ export default function RangeInput({text}: Props) {
 
     return (
         <div className="">
-            <label className="grid text-[#7FC4ED] mt-7">
+            <label className="grid text-[#7FC4ED]">
                 <span className="flex justify-between items-center text-base font-medium">
                     {text}
                     <span className="text-xs text-[#4E4964]">{rangeValue}ml</span>
