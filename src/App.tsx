@@ -1,5 +1,6 @@
 import waterImage from "./assets/water.png";
 import glassImage from "./assets/glass.svg";
+import chevronRight from "./assets/chevronRight.svg";
 import { useState } from "react";
 import CustomModal from "./components/Modal";
 import RangeInput from "./components/RangeInput";
@@ -40,7 +41,7 @@ function App() {
 
           <CustomModal open={modalOpen} onClose={handleClose} />
 
-          <button type="button" className="bg-[#7FC4ED] text-base text-black font-medium w-full p-4 rounded-md" onClick={handleModalOpen}>Começar</button>
+          <button type="button" className="bg-[#7FC4ED] text-base text-black font-medium w-full p-4 rounded-md flex justify-center " onClick={handleModalOpen}>Começar <img src={chevronRight} alt="" /> </button>
 
         </section>
       </div >
