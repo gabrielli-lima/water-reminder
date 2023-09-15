@@ -8,7 +8,7 @@ In this challenge, a reminder was developed to motivate you to drink water. The 
 
 ## 🛠️ Technologies
 
-- React
+- ReactJS
 - Typescript
 - Tailwind CSS
 - Material UI
